@@ -5,6 +5,7 @@ I built this to learn React, Tailwind CSS, and how to fetch data from an API.
 
 
 Features:
+
 Search for cards by name
 
 View card stats and images
