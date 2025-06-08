@@ -4,11 +4,18 @@ function App() {
     >Clash Royale Card Finder</h1>
 
 
-    <input className="font-bold"
-    ></input>
 
-    <button className="font-bold "
-    >search</button>
+    <div className="mt-8">
+
+
+
+      <input className="font-bold border-2 rounded"
+      ></input>
+
+
+      <button className="font-bold border-2 rounded"
+      >search</button>
+    </div>
   
   </>)
 };

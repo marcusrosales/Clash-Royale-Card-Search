@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'clash_regular';
+    src: url('/fonts/Clash_Regular.otf') format('opentype')
+}
+
+
+div {
+    text-align: center;
+    font-family: 'clash_regular';
+    text
+}
