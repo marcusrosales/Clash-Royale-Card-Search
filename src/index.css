@@ -6,8 +6,12 @@
 }
 
 
+#MainH1 {
+    margin-top: 20px;
+    color: grey;
+}
+
 div {
     text-align: center;
     font-family: 'clash_regular';
-    text
 }

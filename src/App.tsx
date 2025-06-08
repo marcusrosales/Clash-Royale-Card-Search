@@ -1,6 +1,6 @@
 function App() {
   return(<>
-    <h1 className='text-center text-7xl font-bold'
+    <h1 id="MainH1" className='text-center text-7xl font-bold bg-gradient-to-b'
     >Clash Royale Card Finder</h1>
 
 
