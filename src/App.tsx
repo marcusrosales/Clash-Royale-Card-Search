@@ -1,3 +1,7 @@
+import { useState } from "react"
+import { useEffect } from "react"
+
+
 function App() {
   return(<>
     <h1 id="MainH1" className='text-center text-8xl text-shadow-lg/100 text-shadow-purple-950'
@@ -12,3 +16,5 @@ function App() {
     </div> </>) };
 
 export default App
+
+
