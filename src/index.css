@@ -1,22 +1,27 @@
 @import "tailwindcss";
 
-
-
 @font-face {
     font-family: 'clash_regular';
     src: url('/fonts/Clash_Regular.otf') format('opentype')
 }
 
 
+
+
 #MainH1 {
-    margin-top: 20px;
-    color: rgb(255, 255, 255);
-
-
+    margin-top: 15px;
+    
+    font-family: 'clash_regular';
+    color: rgb(217, 82, 255);
 }
 
 
-div {
-    text-align: center;
+.inputDiv {
     font-family: 'clash_regular';
+    
+    display: flex;
+    justify-content: center;        
+    gap: 10px;
+    padding: 20px 20px;
+
 }
