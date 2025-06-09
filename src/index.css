@@ -6,7 +6,9 @@
 }
 
 
-
+body{
+    background-color: rgb(255, 255, 255);
+}
 
 #MainH1 {
     margin-top: 15px;
