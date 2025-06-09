@@ -2,12 +2,14 @@ import React, { useState } from "react"
 import { useEffect } from "react"
 
 function App() {
-  function clickedFunc(){console.log("tests click")}
-
-  function typedFunc(){console.log("test type")}
-
-
+  function clickedFunc(){
+    console.log("tests click")
+  }
   
+  function typedFunc(){
+    console.log("test type")
+  }
+
 return(<>
     <h1 id="MainH1" className='text-center text-8xl text-shadow-lg/100 text-shadow-purple-950'
     >Clash Royale Card Finder</h1>
