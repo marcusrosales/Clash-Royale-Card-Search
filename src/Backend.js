@@ -1,14 +1,9 @@
-const token = process.env.REACT_APP_TOKEN;
-const url = 'https://api.clashroyale.com/v1/cards/'
+const express = require("express");
+const app = express();
 
 
 
-async function fetchCard() {
-    console.log("fireball!")
-}
-
-fetchCard()
 
 
 
-export default fetchCard;
+
