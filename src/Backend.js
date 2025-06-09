@@ -8,3 +8,7 @@ async function fetchCard() {
 }
 
 fetchCard()
+
+
+
+export default fetchCard;
