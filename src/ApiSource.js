@@ -1,8 +1,8 @@
 import dotenv from 'dotenv'
 dotenv.config();
-
-
 const token = process.env.REACT_APP_TOKEN;
+
+
     async function fetchCard() {
         const response = await fetch('https://api.clashroyale.com/v1/cards/', {
             method: 'GET',
@@ -11,8 +11,10 @@ const token = process.env.REACT_APP_TOKEN;
                 }
         })
         const data = await response.json();
-        return(data)
+        const slicedData = data.items.slice(0,1)
+        return(slicedData)
     }
+
 
 
 console.log(await fetchCard())
