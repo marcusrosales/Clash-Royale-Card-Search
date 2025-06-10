@@ -1,13 +1,17 @@
 import React, { useState } from "react"
 import { useEffect } from "react"
 
+
 function App() {
+
   function clickedFunc(){
-    console.log("tests click")
+    console.log('clicked button')
+
   }
 
   function typedFunc(){
-    console.log("test type")
+    let [value,setValue] = useState(0)
+
   }
 
   
@@ -28,4 +32,4 @@ return(<>
 
     </>) };
 
-export default Appz
+export default App
