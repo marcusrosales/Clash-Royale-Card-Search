@@ -1,20 +1,15 @@
-import React, { useState } from "react"
-import { useEffect } from "react"
 
 
 function App() {
 
+
   function clickedFunc(){
     console.log('clicked button')
-
   }
-
   function typedFunc(){
-    let [value,setValue] = useState(0)
-
+    console.log('typed character')
   }
 
-  
 return(<>
     <h1 id="MainH1" className='text-center text-8xl text-shadow-lg/100 text-shadow-purple-950'
     >Clash Royale Card Finder</h1>
