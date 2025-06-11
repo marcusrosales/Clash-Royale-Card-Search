@@ -2,6 +2,11 @@ import express from 'express'
 import dotenv from "dotenv"
 import cors from 'cors'
 
+
+
+// need to add functionality for post so we need to learn that tmrw and we need to 
+// write an algoryhten for sorting the useres search and returning that data 
+
 dotenv.config();
 
 const token = process.env.REACT_APP_TOKEN
