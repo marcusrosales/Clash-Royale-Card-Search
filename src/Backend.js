@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { json } from 'express'
 import dotenv from "dotenv"
 import cors from 'cors'
 
@@ -14,10 +14,23 @@ const app = express()
 app.listen(3000)
 
 app.use(cors())
+app.use(express.json());
+
+
+
+app.post('/posttest', (req,res)=>{
+    console.log(req.body)
+    res.json('got it')      
+})
+
+
+
 
 app.get('/', (req, res) => {
   res.send('Server is running');
 });
+
+
 
 app.get("/cardrequest", async (req,res)=>{
     const cards = await fetchCard()
@@ -34,4 +47,11 @@ async function fetchCard() {
     const oneCard = data.items.slice(0,1);
     return(oneCard)
 }
-console.log('server running today')
+
+
+console.log('hello world')
+
+
+function findCard(){
+    console.log('card found')
+}
