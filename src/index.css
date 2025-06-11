@@ -30,8 +30,19 @@ body{
     
 }
 
+
+
+
 .cardDiv {
+    margin: 50px;
+    gap: none;
     font-family: 'clash_regular';
     display: flex;
-    justify-content: ceter;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardDiv img {
+    max-width: 300px;
 }

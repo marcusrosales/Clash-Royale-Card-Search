@@ -6,6 +6,7 @@ function App() {
   
   const [cardImage, setCardImage] = useState('')
   const [cardName, setCardName] = useState('')
+  const [cardElixerCost, setCardElixerCost] = useState('')
 
 
   async function clickedFunc(){
@@ -36,7 +37,7 @@ return(<>
 
 
     <div className="cardDiv">
-      <h1>{cardName}</h1>
+      <h1 className="text-7xl center">{cardName}</h1>
       <img src={cardImage}></img>
 
 
@@ -46,4 +47,4 @@ return(<>
 
     </>) };
 
-export default App
+export default App  
