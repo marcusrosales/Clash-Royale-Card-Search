@@ -12,15 +12,16 @@ dotenv.config();
 const token = process.env.REACT_APP_TOKEN
 const app = express()
 app.listen(3000)
-
+ 
 app.use(cors())
 app.use(express.json());
 
 
 
 app.post('/posttest', (req,res)=>{
-    console.log(req.body)
-    res.json('got it')      
+    let CardData = req.body.card
+    console.log(CardData)
+    res.json('data')      
 })
 
 
@@ -49,7 +50,6 @@ async function fetchCard() {
 }
 
 
-console.log('hello world')
 
 
 function findCard(){
