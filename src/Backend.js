@@ -1,15 +1,22 @@
-import dotenv from 'dotenv'
-dotenv.config();
-const token = process.env.REACT_APP_TOKEN;
+import express from 'express'
+import dotenv from "dotenv"
 
-    export async function fetchCard() {
-        const response = await fetch('https://api.clashroyale.com/v1/cards/', {
-            method: 'GET',
-            headers: {
-                'Authorization': `Bearer ${token}`,
-                }
-        })
-        const data = await response.json();
-        const slicedData = data.items.slice(0,1)
-        return(slicedData)
-    }
+dotenv.config();
+const token = process.env.REACT_APP_TOKEN
+
+
+
+
+const app = express()
+
+
+app.listen(3000)
+
+app.get("/", (req,res)=> {
+    res.send('hello')
+})
+
+
+console.log('testing ')
+
+
