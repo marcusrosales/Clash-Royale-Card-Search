@@ -1,8 +1,14 @@
+
+
+
 function App() {
 
-
-  function clickedFunc(){
+  async function clickedFunc(){
     console.log('clicked button')
+
+    const res = await fetch("http://localhost:3000/cardrequest")
+    const data = await res.json()
+    console.log(data)
   }
   function typedFunc(){
     console.log('typed character')
