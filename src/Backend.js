@@ -23,16 +23,11 @@ app.post('/posttest', async (req,res)=>{
     
     const foundCard = bloat.items.find(card => card.name.toLowerCase() === CardData.toLowerCase().trim())
     console.log(foundCard)
+    res.send(foundCard)
 })
 
 
 
-app.get("/cardrequest", async (req,res)=>{
-    const cards = await fetchCard()
-    console.log('fetched api data from get')
-    res.json(cards)
-})
-    
 
 async function fetchCard() {
     const response = await fetch('https://api.clashroyale.com/v1/cards/', {

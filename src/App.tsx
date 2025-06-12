@@ -4,8 +4,6 @@ import { useState } from "react"
 function App() {
   
 
-  const [cardImage, setCardImage] = useState('')
-  const [cardName, setCardName] = useState('')
 
 
 
@@ -19,13 +17,7 @@ function App() {
   // lets make a basic requst to the server first 
 
   async function clickedFunc(){
-    console.log('clicked button')
 
-    const res = await fetch("http://localhost:3000/cardrequest")
-    const data = await res.json()
-
-    //setCardImage(data[0].iconUrls.medium)
-    //setCardName(data[0].name)
 
     startCardComm()
   }
@@ -80,8 +72,8 @@ return(<>
 
 
     <div className="cardDiv">
-      <h1 className="text-7xl center">{cardName}</h1>
-      <img src={cardImage}></img>
+      <h1 className="text-7xl center"></h1>
+      <img></img>
 
 
 
