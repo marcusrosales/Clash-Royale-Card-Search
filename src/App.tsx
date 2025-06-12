@@ -51,20 +51,26 @@ function App() {
 return(<>
 
 
-    <h1 id="MainH1" className='text-center text-8xl text-shadow-lg/100 text-shadow-purple-950'
+    <h1 id="MainH1" className='text-center text-9xl text-shadow-lg/100 text-shadow-purple-950'
     >Clash Royale Card Finder</h1>
 
 
     <div className="mt-8 inputDiv" >
 
-      <input className="border-2 h-9 w-35"
+  
+  
+      <input className="border-4 rounded-lg h-20 w-120 hover:bg-purple-400 bg-white text-5xl text-center text-shadow-lg/100 text-shadow-purple-950 inputField"
       onChange={typeFunc}
+      placeholder="Enter Card..."
       ></input>
   
-  
-      <button className="border-2 h-9 w-20"
+
+      <button className="border-4 rounded-lg h-20 w-55 text-white border-black hover:bg-purple-400  text-shadow-black text-5xl inputButton"
       onClick={clickedFunc}
       >search</button>  
+
+
+
     </div>  
 
 
