@@ -41,12 +41,6 @@ function App() {
     let elixirCost = data.elixirCost
     let rarity = data.rarity
     
-    console.log(data.name)
-    console.log(data.iconUrls.medium)
-
-    console.log(data.elixirCost)
-    console.log(data.rarity)
-
 
   }
 
@@ -84,10 +78,13 @@ return(<>
       
       >Search</button>  
 
-
     </div>  
 
+    <div className=" cardDiv">
+      
+      <h2>Card Name</h2>
 
+    </div>
 
 
 
