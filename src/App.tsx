@@ -33,10 +33,16 @@ function App() {
     headers:{'Content-Type': 'application/json' },
     body: JSON.stringify({card:`${cardUserWants}`})
     });
-    const data = await res.json
-    console.log(data)
 
+    const data = await res.json()
 
+    let cardImage = data.iconUrls
+    let cardName = data.name
+
+    let elixerCost = data.elixerCost
+    
+    console.log(data.iconUrls)
+    console.log(data.elixerCost)
 
 
   }

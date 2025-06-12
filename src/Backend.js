@@ -3,7 +3,6 @@ import dotenv from "dotenv"
 import cors from 'cors'
 dotenv.config();
 
-// write an algoryhten for sorting the useres search and returning that data 
 
 
 
@@ -13,7 +12,6 @@ app.listen(3000)
  
 app.use(cors())
 app.use(express.json());
-
 
 
 app.post('/posttest', async (req,res)=>{
@@ -26,9 +24,6 @@ app.post('/posttest', async (req,res)=>{
     res.send(foundCard)
 })
 
-
-
-
 async function fetchCard() {
     const response = await fetch('https://api.clashroyale.com/v1/cards/', {
         headers: { Authorization: `Bearer ${token}`},
@@ -38,4 +33,3 @@ async function fetchCard() {
     //const oneCard = data.items.slice(0,1);
     return(data)
 }
-
