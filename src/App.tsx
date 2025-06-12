@@ -59,15 +59,21 @@ return(<>
 
   
   
-      <input className="border-4 rounded-lg h-20 w-120 hover:bg-purple-400 bg-white text-5xl text-center text-shadow-lg/100 text-shadow-purple-950 inputField"
+      <input className="text-center border-4 text-4xl rounded-lg h-20 w-120 text-white bg-white  border-black text-shadow-lg/100 text-shadow-black
+      "
+      
       onChange={typeFunc}
       placeholder="Enter Card..."
+      
       ></input>
   
 
-      <button className="border-4 rounded-lg h-20 w-55 text-white border-black hover:bg-purple-400  text-shadow-black text-5xl inputButton"
+      <button className="border-4 rounded-lg h-20 w-55 text-white border-black text-shadow-lg/100 text-shadow-black bg-green-500 hover:bg-green-400 text-5xl 
+        shadow-lg/100 shadow-green-800 inputButton"
+      
       onClick={clickedFunc}
-      >search</button>  
+      
+      >Search</button>  
 
 
 
