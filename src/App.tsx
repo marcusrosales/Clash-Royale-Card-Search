@@ -60,7 +60,7 @@ return(<>
   
   
       <input className="text-center border-4 text-4xl rounded-lg h-20 w-120 text-white bg-white  border-black text-shadow-lg/100 text-shadow-black
-      "
+      placeholder-white placeholder:opacity-40"
       
       onChange={typeFunc}
       placeholder="Enter Card..."
