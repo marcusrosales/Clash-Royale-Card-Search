@@ -9,16 +9,14 @@
 
 
 Body {
-    background-image: linear-gradient(to bottom, #ffffff, #39acff);
-    height: 100vh;
-    margin: 0;
+    background-color: rgb(36, 164, 255);
 }
 
 #MainH1 {
     margin-top: 15px;
     
     font-family: 'clash_regular';
-    color: rgb(217, 82, 255);
+    color: #ff52ff;
 }
 
 
@@ -48,5 +46,5 @@ Body {
 
 
 .cardDiv img {
-    max-width: 300px;
+    max-width: 200px;
 }

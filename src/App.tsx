@@ -10,6 +10,9 @@ function App() {
   const [change, setChange] = useState('')
   
   const [cardName, setCardName] = useState('')
+  const [cardImage, setCardImage] = useState('')
+  const [cardElixerCost, setCardElixerCost] = useState(null)
+  const [cardRarity, setCardRarity] = useState(null)
 
 
   // need to change it so when we click button it takes from our typefunction and sends a reuqest
@@ -37,10 +40,10 @@ function App() {
     const data = await res.json()
 
     let cardName = setCardName(data.name)
-    let cardImage = data.iconUrls.medium
+    let cardImage = setCardImage(data.iconUrls.medium)
 
-    let elixirCost = data.elixirCost
-    let rarity = data.rarity
+    let elixirCost = setCardElixerCost(data.elixirCost)
+    let rarity = setCardRarity(data.rarity)
     
 
   }
@@ -83,10 +86,17 @@ return(<>
 
 
 
-    <div className=" cardDiv">
+    <div className="cardDiv">
       
-      <h1>{cardName}</h1>
-
+      <h1 className="text-7xl text-white text-shadow-lg/100 text-shadow-black ">{cardName}</h1>
+      <img src={cardImage}></img>
+      
+      <div className=" cardData ">
+        
+        <h2 className="text-6xl text-center text-purple-600 text-shadow-lg/100 text-shadow-black">{cardElixerCost}</h2>
+        <h2 className="text-8xl text-center text-white text-shadow-lg/100 text-shadow-black" >{cardRarity}</h2>        
+      
+      </div>
 
     </div>
 
