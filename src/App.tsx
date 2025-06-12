@@ -8,7 +8,8 @@ function App() {
 
 
   const [change, setChange] = useState('')
-
+  
+  const [cardName, setCardName] = useState('')
 
 
   // need to change it so when we click button it takes from our typefunction and sends a reuqest
@@ -35,7 +36,7 @@ function App() {
 
     const data = await res.json()
 
-    let cardName = data.name
+    let cardName = setCardName(data.name)
     let cardImage = data.iconUrls.medium
 
     let elixirCost = data.elixirCost
@@ -80,9 +81,12 @@ return(<>
 
     </div>  
 
+
+
     <div className=" cardDiv">
       
-      <h2>Card Name</h2>
+      <h1>{cardName}</h1>
+
 
     </div>
 
