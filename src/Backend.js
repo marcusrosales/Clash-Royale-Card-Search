@@ -14,23 +14,19 @@ app.listen(3000)
 app.use(cors())
 app.use(express.json());
 
-
+console.log('test')
 
 app.post('/posttest', (req,res)=>{
     let CardData = req.body.card
+    console.log('test post print')
     return(CardData)
 })
 
 
 
-app.get('/', (req, res) => {
-  res.send('Server is running');
-});
-
-
-
 app.get("/cardrequest", async (req,res)=>{
     const cards = await fetchCard()
+    console.log('fetched api data from get')
     res.json(cards)
 })
     
@@ -47,7 +43,3 @@ async function fetchCard() {
 
 
 
-
-function findCard(){
-    console.log('card found')
-}
