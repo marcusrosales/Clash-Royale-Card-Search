@@ -14,12 +14,18 @@ app.listen(3000)
 app.use(cors())
 app.use(express.json());
 
-console.log('test')
 
-app.post('/posttest', (req,res)=>{
+
+
+const cardQueue = [];
+app.post('/posttest', async (req,res)=>{
     let CardData = req.body.card
-    console.log('test post print')
-    return(CardData)
+
+    let bloat = await fetchCard()
+    
+    const foundCard = bloat.items.find(card => card.name.toLowerCase() === CardData.toLowerCase().trim())
+    console.log(foundCard)
+    
 })
 
 
@@ -37,9 +43,7 @@ async function fetchCard() {
     });
 
     const data = await response.json();
-    const oneCard = data.items.slice(0,1);
-    return(oneCard)
+    //const oneCard = data.items.slice(0,1);
+    return(data)
 }
-
-
 

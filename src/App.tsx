@@ -6,7 +6,7 @@ function App() {
 
   const [cardImage, setCardImage] = useState('')
   const [cardName, setCardName] = useState('')
-  const [cardElixerCost, setCardElixerCost] = useState('')
+
 
 
   const [change, setChange] = useState('')
@@ -24,11 +24,10 @@ function App() {
     const res = await fetch("http://localhost:3000/cardrequest")
     const data = await res.json()
 
-    setCardImage(data[0].iconUrls.medium)
-    setCardName(data[0].name)
+    //sxetCardImage(data[0].iconUrls.medium)
+    //setCardName(data[0].name)
 
     startCardComm()
-
   }
 
 
@@ -43,7 +42,7 @@ function App() {
     body: JSON.stringify({card:`${cardUserWants}`})
     });
     const data = await res.json
-    console.log(data  )
+    console.log(data)
 
 
 
