@@ -24,7 +24,7 @@ function App() {
     const res = await fetch("http://localhost:3000/cardrequest")
     const data = await res.json()
 
-    //sxetCardImage(data[0].iconUrls.medium)
+    //setCardImage(data[0].iconUrls.medium)
     //setCardName(data[0].name)
 
     startCardComm()
