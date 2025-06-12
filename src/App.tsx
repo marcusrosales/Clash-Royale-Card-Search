@@ -26,7 +26,6 @@ function App() {
 
   async function startCardComm() {
     let cardUserWants = change
-    console.log(cardUserWants)
     
     const res = await fetch("http://localhost:3000/posttest", {
     method:"POST",
@@ -36,13 +35,17 @@ function App() {
 
     const data = await res.json()
 
-    let cardImage = data.iconUrls
     let cardName = data.name
+    let cardImage = data.iconUrls.medium
 
-    let elixerCost = data.elixerCost
+    let elixirCost = data.elixirCost
+    let rarity = data.rarity
     
-    console.log(data.iconUrls)
-    console.log(data.elixerCost)
+    console.log(data.name)
+    console.log(data.iconUrls.medium)
+
+    console.log(data.elixirCost)
+    console.log(data.rarity)
 
 
   }
@@ -82,20 +85,11 @@ return(<>
       >Search</button>  
 
 
-
     </div>  
 
 
 
 
-
-    <div className="cardDiv">
-      <h1 className="text-7xl center"></h1>
-      <img></img>
-
-
-
-    </div>
 
 
     </>) };
