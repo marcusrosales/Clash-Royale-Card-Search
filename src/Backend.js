@@ -16,8 +16,6 @@ app.use(express.json());
 
 
 
-
-const cardQueue = [];
 app.post('/posttest', async (req,res)=>{
     let CardData = req.body.card
 
@@ -25,7 +23,6 @@ app.post('/posttest', async (req,res)=>{
     
     const foundCard = bloat.items.find(card => card.name.toLowerCase() === CardData.toLowerCase().trim())
     console.log(foundCard)
-    
 })
 
 
